@@ -1,5 +1,4 @@
 import React from 'react';
-import { Black_Ops_One } from 'next/font/google';
 import Navbar from '@/Components/Navbar/Navbar';
 import Banner from '@/Components/Banner/Banner';
 import About from '@/Components/About/About';
@@ -8,17 +7,17 @@ import Sponser from "@/Components/Sponser/sponser";
 import Contact from "@/Components/Contact/contact"
 import Footer from "@/Components/Footer/Footer";
 import TracksCard from '@/Components/Tracks/TracksCard';
-const blackopsone = Black_Ops_One({
-  subsets: ['latin'],
-  weight: ['400']
-})
+import Counts from '@/Components/Count/Counts';
+
+
+
 
 
 const index = () => {
 
   return (
 
-    <div className={blackopsone.className}>
+    <div >
       {/* Navbar */}
       <Navbar />
 
@@ -27,12 +26,14 @@ const index = () => {
 
       {/*  About section   */}
       <About />
+      <Counts/>
 
       {/*Sponser */}
       <Sponser />
 
       {/* team carousel */}
       <Tcarousel />
+
 
       {/* tracks */}
       <TracksCard/>

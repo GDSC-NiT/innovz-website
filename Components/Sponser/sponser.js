@@ -101,9 +101,9 @@ const Sponsors = () => {
                 {`
                     .glow{
                         position: absolute;
-                        width: 622px;
+                        width: 522px;
                         height: 596px;
-                        right: -5px;
+                        right: -10px;
 
                         background: rgba(217, 246, 38, 0.16);
                         filter: blur(200px);

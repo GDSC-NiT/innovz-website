@@ -27,7 +27,6 @@ const AboutImg = () => {
         }
         `}
       </style>
-      {/* <div className=" absolute -inset-1 bg-yellow-200 blur-3xl h-60 w-60 mt-8 ml-10"></div> */}
       <div className='glow'></div>
       <Image
         className='relative mb-6'

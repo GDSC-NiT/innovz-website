@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Digit from './Digit'
 
 const CountItems = ({title, limit}) => {
   return (
@@ -7,8 +8,8 @@ const CountItems = ({title, limit}) => {
             <h1 className='text-white text-2xl mb-4'>{title}</h1>
 
                 <div className='relative'>
-                    <h1 className='absolute text-white text-5xl top-16 left-14 font-bold' >
-                        {limit}+
+                    <h1 className='absolute text-white text-5xl top-16 left-16 font-bold' >
+                        <Digit upto={limit}/>
                     </h1>
                     <Image
                         src='/roundborder.png'
